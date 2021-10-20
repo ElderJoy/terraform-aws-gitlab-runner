@@ -84,14 +84,14 @@ module "runner" {
   # runners_off_peak_timezone   = var.timezone
   # runners_off_peak_idle_count = 0
   # runners_off_peak_idle_time  = 60
-  runners_machine_autoscaling = [
-    {
-      periods    = ["\"* * 0-9,17-23 * * mon-fri *\"", "\"* * * * * sat,sun *\""]
-      idle_count = 0
-      idle_time  = 60
-      timezone   = var.timezone
-    }
-  ]
+  # runners_machine_autoscaling = [
+  #   {
+  #     periods    = ["\"* * 0-9,17-23 * * mon-fri *\"", "\"* * * * * sat,sun *\""]
+  #     idle_count = 0
+  #     idle_time  = 60
+  #     timezone   = var.timezone
+  #   }
+  # ]
 
   runners_pre_build_script = <<EOT
   '''
