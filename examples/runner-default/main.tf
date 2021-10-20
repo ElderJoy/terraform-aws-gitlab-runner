@@ -49,8 +49,8 @@ module "runner" {
 
   gitlab_runner_registration_config = {
     registration_token = var.registration_token
-    tag_list           = "docker_spot_runner"
-    description        = "runner default - auto"
+    tag_list           = "finpulse-dev"
+    description        = "aws terraform runner"
     locked_to_project  = "true"
     run_untagged       = "false"
     maximum_timeout    = "3600"
