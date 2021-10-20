@@ -50,7 +50,7 @@ variable "metrics_autoscaling" {
 variable "instance_type" {
   description = "Instance type used for the GitLab runner."
   type        = string
-  default     = "t3.micro"
+  default     = "t2.micro"
 }
 
 variable "runner_instance_ebs_optimized" {
